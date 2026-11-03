@@ -7,12 +7,16 @@ st.set_page_config(
     page_title="EcoLoop Node | NGIH",
     page_icon="♻️",
     layout="wide"
-)
 
-st.image("IMG-20261028-WA0000.jpg", width=180)
+    col1, col2 = st.columns([1, 3])
 
-st.title("♻️ EcoLoop Node")
-st.subheader("Intelligent Waste Monitoring Dashboard")
+with col1:
+    st.image("IMG-20261028-WA0000.jpg", width=100)
+
+with col2:
+    st.title("♻️ EcoLoop Node")
+    st.caption("Intelligent Waste Management")
+    st.caption("Powered by NGIH")
 
 st.info("Prototype Demo: Waste figures are simulated. No physical sensors are connected yet.")
 
@@ -102,25 +106,21 @@ if st.button("Reset Demo"):
     st.session_state.history = []
     st.rerun()
 
-
 st.divider()
 
-# NGIH branding
-st.image("IMG-20261028-WA0000.jpg", width=180)
-
 st.markdown("""
-<div style="text-align: center; padding: 15px;">
-    <h2 style="color: #1687FF;">ECOLOOP NODE</h2>
-    <p><strong>Powered by Next Gen Impact Hub (NGIH)</strong></p>
-    <hr>
+<div style="text-align:center; padding:12px;">
+    <p style="color:#1687FF; font-weight:bold;">
+        POWERED BY NEXT GEN IMPACT HUB (NGIH)
+    </p>
     <p><strong>Munashe Roy Mutopa</strong></p>
     <p>Project Coordinator & Developer</p>
-    <p style="color: gray; font-size: 12px;">
-        Building technology for sustainable communities.
-    </p>
-    <p style="color: gray; font-size: 11px;">
-        Sensor integration is under development.
-    </p>
+    <small>Building technology for sustainable communities.</small>
+    <br><br>
+    <small>Sensor integration is under development.</small>
 </div>
 """, unsafe_allow_html=True)
+
+
+
 
