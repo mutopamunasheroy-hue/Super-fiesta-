@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 st.set_page_config(
-    page_title="EcoLoop Node",
+    page_title="EcoLoop Node | NGIH",
     page_icon="♻️",
     layout="wide"
 )
@@ -100,4 +100,25 @@ if st.button("Reset Demo"):
     st.session_state.history = []
     st.rerun()
 
-st.caption("EcoLoop Node | Early-stage prototype")
+
+st.divider()
+
+# NGIH branding
+st.image("ngih_logo.png", width=150)
+
+st.markdown("""
+<div style="text-align: center; padding: 15px;">
+    <h2 style="color: #1687FF;">ECOLOOP NODE</h2>
+    <p><strong>Powered by Next Gen Impact Hub (NGIH)</strong></p>
+    <hr>
+    <p><strong>Munashe Roy Mutopa</strong></p>
+    <p>Project Coordinator & Developer</p>
+    <p style="color: gray; font-size: 12px;">
+        Building technology for sustainable communities.
+    </p>
+    <p style="color: gray; font-size: 11px;">
+        Sensor integration is under development.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
