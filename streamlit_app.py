@@ -9,6 +9,8 @@ st.set_page_config(
     layout="wide"
 )
 
+st.image("IMG-20261028-WA0000.jpg", width=180)
+
 st.title("♻️ EcoLoop Node")
 st.subheader("Intelligent Waste Monitoring Dashboard")
 
@@ -104,7 +106,7 @@ if st.button("Reset Demo"):
 st.divider()
 
 # NGIH branding
-st.image("ngih_logo.png", width=150)
+st.image("IMG-20261028-WA0000.jpg", width=180)
 
 st.markdown("""
 <div style="text-align: center; padding: 15px;">
